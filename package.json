@@ -1,0 +1,56 @@
+{
+  "name": "glamorous-primitives",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "exenv": "^1.2.2",
+    "glamorous": "^3.25.0",
+    "glamorous-native": "^1.1.0",
+    "react-primitives": "^0.4.3"
+  },
+  "peerDependencies": {
+    "glamor": "^2.20.37"
+  },
+  "scripts": {
+    "prebuild": "rm -rf lib",
+    "build": "./node_modules/.bin/babel src --out-dir lib",
+    "test": "./node_modules/.bin/jest --watch"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "web",
+    "native"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-jest": "^20.0.3",
+    "babel-preset-babili": "^0.1.4",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^2.9.1",
+    "enzyme-to-json": "^1.5.1",
+    "jest": "^20.0.4",
+    "jest-glamor-react": "^3.0.0",
+    "jest-react-native": "^18.0.0",
+    "jsdom": "^11.1.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  }
+}
