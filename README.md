@@ -2,11 +2,11 @@
 
 > style primitive interfaces with glamorous
 
-**Problem** 
+### Problem 
 
 You cannot use [glamorous](https://github.com/paypal/glamorous) together with [react-primitives](https://github.com/lelandrichardson/react-primitives) to style the components.
 
-**Solution**
+### Solution
 
 Combine glamorous with react-primitives to render the same code across the targets.
 
