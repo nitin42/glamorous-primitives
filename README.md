@@ -42,6 +42,7 @@ import glamorous from 'glamorous-primitives'
 ### Example 
 
 ```jsx
+import React from 'react'
 import { StyleSheet } from 'react-primitives'
 import glamorous from 'glamorous-primitives'
 
@@ -58,12 +59,14 @@ const StyledText = glamorous.text({
   fontSize: '40px'
 })
 
-let Comp = () => {
-  return (
-    <StyledView>
-      <StyledText>Hello World!!</StyledText>
-    </StyledView>
-  )
+export default class App extends React.Component {
+  render () {
+    return (
+      <StyledView>
+        <StyledText>Hello World!!</StyledText>
+      </StyledView>
+    )
+  }
 }
 
 ```
