@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Primitive interfaces combine inline styles with <Image /> component 1`] = `
+<glamorous(Image)
+  source="https://facebook.github.io/react/img/logo_og.png"
+  style={66}
+/>
+`;
+
+exports[`Primitive interfaces sanity test 1`] = `
+.glamor-0,
+[data-glamor-0] {
+  margin: 10px;
+}
+
+<div
+  className="glamor-0 rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+>
+  Hello World
+</div>
+`;
+
+exports[`Primitive interfaces should combine with StyleSheet.create() (inline styles) 1`] = `
+.glamor-0,
+[data-glamor-0] {
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+
+<div
+  className="glamor-0 rn-alignItems-1oszu61 rn-backgroundColor-1mjtqww rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+/>
+`;
+
+exports[`Primitive interfaces should render a component with theme properties 1`] = `
+.glamor-0,
+[data-glamor-0] {
+  color: red;
+  padding: 10px;
+}
+
+<div
+  class="glamor-0 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+  dir="auto"
+/>
+`;
+
+exports[`Primitive interfaces should render the Native <Image /> component 1`] = `
+<glamorous(Image)
+  source="https://facebook.github.io/react/img/logo_og.png"
+/>
+`;
+
+exports[`with theme prop of padding 10px 1`] = `
+.glamor-0,
+[data-glamor-0] {
+  color: red;
+  padding: 10px;
+}
+
+<glamorous(Text)
+  theme={
+    Object {
+      "padding": 10,
+    }
+  }
+>
+  <Text
+    className="glamor-0"
+  >
+    <div
+      className="glamor-0 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      dir="auto"
+    />
+  </Text>
+</glamorous(Text)>
+`;
+
+exports[`with theme prop of padding 20px 1`] = `
+.glamor-0,
+[data-glamor-0] {
+  color: red;
+  padding: 20px;
+}
+
+<glamorous(Text)
+  theme={
+    Object {
+      "padding": 20,
+    }
+  }
+>
+  <Text
+    className="glamor-0"
+  >
+    <div
+      className="glamor-0 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-color-homxoj rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      dir="auto"
+    />
+  </Text>
+</glamorous(Text)>
+`;
