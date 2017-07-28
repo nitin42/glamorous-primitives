@@ -2,11 +2,11 @@
 
 > style primitive interfaces with glamorous
 
-**Problem** 
+### Problem 
 
 You cannot use [glamorous](https://github.com/paypal/glamorous) together with [react-primitives](https://github.com/lelandrichardson/react-primitives) to style the components.
 
-**Solution**
+### Solution
 
 Combine glamorous with react-primitives to render the same code across the targets.
 
@@ -42,6 +42,7 @@ import glamorous from 'glamorous-primitives'
 ### Example 
 
 ```jsx
+import React from 'react'
 import { StyleSheet } from 'react-primitives'
 import glamorous from 'glamorous-primitives'
 
@@ -58,17 +59,22 @@ const StyledText = glamorous.text({
   fontSize: '40px'
 })
 
-let Comp = () => {
-  return (
-    <StyledView>
-      <StyledText>Hello World!!</StyledText>
-    </StyledView>
-  )
+export default class App extends React.Component {
+  render () {
+    return (
+      <StyledView>
+        <StyledText>Hello World!!</StyledText>
+      </StyledView>
+    )
+  }
 }
 
 ```
 
+**This is the exact same code rendering in the browser and as a mobile app 😎**
+
 <p align="center">
-<img src="./gl.png" />
-<img src="rn.png" />
+<img src="https://i.gyazo.com/481fe38dcd6a3ebd63f80322a1034107.png" />
 </p>
+
+
