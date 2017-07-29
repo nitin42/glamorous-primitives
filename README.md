@@ -74,7 +74,7 @@ export default class App extends React.Component {
 **This is the exact same code rendering in the browser and as a mobile app 😎**
 
 <p align="center">
-<img src="https://i.gyazo.com/481fe38dcd6a3ebd63f80322a1034107.png" />
+<img src="./Primitives.png" />
 </p>
 
 
