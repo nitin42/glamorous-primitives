@@ -1,4 +1,4 @@
-## Glamorous primitives
+## Glamorous primitives 💄
 
 > style primitive interfaces with glamorous
 
