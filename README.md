@@ -77,7 +77,7 @@ export default class App extends React.Component {
 <img src="./Primitives.png" />
 </p>
 
-**Also to Sketch (I haven't pushed the code for 👇🏼 in the repo, so you won't be able render to Sketch yet)**
+**Also to Sketch (since I'm experimenting and the native constructor is WIP, so you won't be able to render to Sketch yet)**
 <p align="center">
 <img src="https://i.gyazo.com/902c9d20818cd7bac37fac5efcf1d202.gif" />
 </p>
