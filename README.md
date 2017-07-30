@@ -81,3 +81,8 @@ export default class App extends React.Component {
 <p align="center">
 <img src="https://i.gyazo.com/902c9d20818cd7bac37fac5efcf1d202.gif" />
 </p>
+
+### Todo
+
+- [ ] Native constructor
+- [ ] Docs
