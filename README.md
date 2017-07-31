@@ -1,4 +1,5 @@
-## Glamorous primitives 💄
+## Glamorous primitives 💄 
+️️⚠  **WIP**
 
 > style primitive interfaces with glamorous
 
