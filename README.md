@@ -25,7 +25,7 @@ This also depends on `react` and `react-primitives`.
 
 ### Caveats 
 
-Right now glamorous doesn't have a native constructor (**WIP**) that can be used to style the components and render both on web and mobile, so there is subtle difference in import.
+Right now glamorous doesn't have a native constructor (**WIP**) that can be used to style the components and render both on web and mobile, so there is subtle difference in import (with release [`1.0.0`](https://github.com/nitin42/glamorous-primitives/releases/tag/1.0.0))
 
 **For web**
 
