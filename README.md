@@ -18,7 +18,7 @@ Combine glamorous with react-primitives to render the same code across the targe
 This module is distributed via [npm](npmjs.com) and should be installed as one of your project's dependencies:
 
 ```
-npm install --save glamorous-primitives
+npm install --save glamorous-primitives@1.0.0
 ```
 
 This also depends on `react` and `react-primitives`.
