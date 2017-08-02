@@ -1,0 +1,46 @@
+import React from 'react';
+import { CHANNEL } from '../constants';
+import PropTypes from 'prop-types';
+import {checkThemeWrapper} from '../injector/platform';
+
+function generateWarningMessage(componentName) {
+	// eslint-disable-next-line max-len
+	return `glamorous warning: Expected component called "${componentName}" which uses withTheme to be within a ThemeProvider but none was found.`;
+}
+
+export default function withTheme(ComponentToTheme) {
+	class ThemedComponent extends React.Component {
+		state = { theme: {} };
+		setTheme = theme => this.setState({ theme });
+
+		componentWillMount() {
+			if (!this.context[CHANNEL]) {
+				checkThemeWrapper(generateWarningMessage, ComponentToTheme)
+				return;
+			}
+
+			this.setState({ theme: this.context[CHANNEL].getState() });
+		}
+
+		componentDidMount() {
+			if (this.context[CHANNEL]) {
+				this.unsubscribe = this.context[CHANNEL].subscribe(this.setTheme);
+			}
+		}
+
+		componentWillUnmount() {
+			// cleanup subscription
+			this.unsubscribe && this.unsubscribe();
+		}
+
+		render() {
+			return <ComponentToTheme {...this.props} {...this.state} />;
+		}
+	}
+
+	ThemedComponent.contextTypes = {
+		[CHANNEL]: PropTypes.object,
+	};
+
+	return ThemedComponent;
+}
