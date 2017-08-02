@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a non-glamorous component with theme 1`] = `
+<div
+  class="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim"
+  style="padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;"
+/>
+`;
+
+exports[`with theme prop of padding 10px 1`] = `
+<Parent>
+  <ThemeProvider
+    theme={
+      Object {
+        "padding": 10,
+      }
+    }
+  >
+    <ThemedComponent>
+      <Component
+        theme={
+          Object {
+            "padding": 10,
+          }
+        }
+      >
+        <glamorous.View
+          style={
+            Object {
+              "padding": 10,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "padding": 10,
+                },
+              ]
+            }
+          >
+            <div
+              className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim"
+              style={
+                Object {
+                  "paddingBottom": "10px",
+                  "paddingLeft": "10px",
+                  "paddingRight": "10px",
+                  "paddingTop": "10px",
+                }
+              }
+            />
+          </View>
+        </glamorous.View>
+      </Component>
+    </ThemedComponent>
+  </ThemeProvider>
+</Parent>
+`;
+
+exports[`with theme prop of padding 10px 2`] = `
+<Parent>
+  <ThemeProvider
+    theme={
+      Object {
+        "padding": 10,
+      }
+    }
+  >
+    <ThemedComponent>
+      <Child
+        theme={
+          Object {
+            "padding": 10,
+          }
+        }
+      >
+        <glamorous.View
+          style={
+            Object {
+              "padding": 10,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "padding": 10,
+                },
+              ]
+            }
+          >
+            <div
+              className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim"
+              style={
+                Object {
+                  "paddingBottom": "10px",
+                  "paddingLeft": "10px",
+                  "paddingRight": "10px",
+                  "paddingTop": "10px",
+                }
+              }
+            />
+          </View>
+        </glamorous.View>
+      </Child>
+    </ThemedComponent>
+  </ThemeProvider>
+</Parent>
+`;
+
+exports[`with theme prop of padding 20px 1`] = `
+<Parent>
+  <ThemeProvider
+    theme={
+      Object {
+        "padding": 20,
+      }
+    }
+  >
+    <ThemedComponent>
+      <Component
+        theme={
+          Object {
+            "padding": 20,
+          }
+        }
+      >
+        <glamorous.View
+          style={
+            Object {
+              "padding": 20,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "padding": 20,
+                },
+              ]
+            }
+          >
+            <div
+              className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-position-bnwqim"
+              style={
+                Object {
+                  "paddingBottom": "20px",
+                  "paddingLeft": "20px",
+                  "paddingRight": "20px",
+                  "paddingTop": "20px",
+                }
+              }
+            />
+          </View>
+        </glamorous.View>
+      </Component>
+    </ThemedComponent>
+  </ThemeProvider>
+</Parent>
+`;

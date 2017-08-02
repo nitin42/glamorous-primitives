@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Primitive interfaces combine inline styles with <Image /> component 1`] = `
+<glamorous(Image)
+  source="https://facebook.github.io/react/img/logo_og.png"
+  style={71}
+/>
+`;
+
+exports[`Primitive interfaces sanity test 1`] = `
+<div
+  className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-marginTop-156q2ks rn-marginRight-zso239 rn-marginBottom-15d164r rn-marginLeft-1n0xq6e rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+>
+  Hello World
+</div>
+`;
+
+exports[`Primitive interfaces should combine with StyleSheet.create() (inline styles) 1`] = `
+<div
+  className="rn-alignItems-1awozwy rn-backgroundColor-1mjtqww rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-justifyContent-1777fci rn-marginTop-156q2ks rn-marginRight-zso239 rn-marginBottom-15d164r rn-marginLeft-1n0xq6e rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim"
+/>
+`;
+
+exports[`Primitive interfaces should render a component with theme properties 1`] = `
+<div
+  class="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-color-1lbce71 rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+  dir="auto"
+  style="padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;"
+/>
+`;
+
+exports[`Primitive interfaces should render the <Image /> component 1`] = `
+<glamorous(Image)
+  source="https://facebook.github.io/react/img/logo_og.png"
+/>
+`;
+
+exports[`Primitive interfaces supports props as css properties 1`] = `
+<div
+  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+  dir="auto"
+  style={
+    Object {
+      "color": "pink",
+    }
+  }
+>
+  Hello World
+</div>
+`;
+
+exports[`with theme prop of padding 10px 1`] = `
+<glamorous(Text)
+  theme={
+    Object {
+      "padding": 10,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        69,
+        Object {
+          "padding": 10,
+        },
+      ]
+    }
+  >
+    <div
+      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-color-1lbce71 rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      dir="auto"
+      style={
+        Object {
+          "paddingBottom": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "paddingTop": "10px",
+        }
+      }
+    />
+  </Text>
+</glamorous(Text)>
+`;
+
+exports[`with theme prop of padding 20px 1`] = `
+<glamorous(Text)
+  theme={
+    Object {
+      "padding": 20,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        69,
+        Object {
+          "padding": 20,
+        },
+      ]
+    }
+  >
+    <div
+      className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-color-1lbce71 rn-display-1471scf rn-font-1lw9tu2 rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+      dir="auto"
+      style={
+        Object {
+          "paddingBottom": "20px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px",
+          "paddingTop": "20px",
+        }
+      }
+    />
+  </Text>
+</glamorous(Text)>
+`;
