@@ -1,9 +1,10 @@
 import React from 'react'
 import {render, mount} from 'enzyme'
 import serializer from 'jest-glamor-react'
+import 'react-primitives';
 import renderer from 'react-test-renderer'
 import reactPrimitives, {StyleSheet, View} from 'react-primitives'
-import glamorous from '../src/web'
+import glamorous from '../src/index'
 
 expect.addSnapshotSerializer(serializer)
 
@@ -18,7 +19,7 @@ describe('Primitive interfaces', () => {
     expect(tree).toMatchSnapshot()
   })
 
-  test('should not throw any error when called', () => {
+  test('should not throw any error when called glamorous.primitive()', () => {
     glamorous.view({})
   })
 
@@ -94,7 +95,7 @@ describe('Primitive interfaces', () => {
     )
   })
 
-  test('should render the Native <Image /> component', () => {
+  test('should render the <Image /> component', () => {
     const ReactImage = glamorous.image({padding: '10px'})
     expect(
       <ReactImage source="https://facebook.github.io/react/img/logo_og.png" />,
@@ -115,5 +116,13 @@ describe('Primitive interfaces', () => {
         source="https://facebook.github.io/react/img/logo_og.png"
       />,
     ).toMatchSnapshot()
+  })
+
+  test('supports props as css properties', () => {
+    const tree = renderer.create(
+      <glamorous.Text color="pink">Hello World</glamorous.Text>
+    ).toJSON()
+
+    expect(tree).toMatchSnapshot()
   })
 })
