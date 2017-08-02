@@ -1,39 +1,51 @@
 {
   "name": "glamorous-primitives",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "2.0.0",
+  "main": "lib/index.js",
+  "repository": "github.com/nitin42/glamorous-primitives",
+  "author": "Nitin Tulswani",
+  "keywords": [
+    "react",
+    "glamorous",
+    "react-primitives"  
+  ],
   "license": "MIT",
   "dependencies": {
+    "brcast": "^2.0.2",
     "exenv": "^1.2.2",
-    "glamorous": "^3.25.0",
-    "glamorous-native": "^1.1.0",
+    "prop-types": "^15.5.10",
     "react-primitives": "^0.4.3"
   },
   "peerDependencies": {
-    "glamor": "^2.20.37"
+    "glamor": "^2.20.37",
+    "glamorous": "^3.25.0",
+    "glamorous-native": "^1.1.0",
+    "react": "^15.6.1"
   },
   "scripts": {
     "prebuild": "rm -rf lib",
-    "build": "./node_modules/.bin/babel src --out-dir lib",
-    "test": "./node_modules/.bin/jest --watch"
+    "codemod": "./node_modules/.bin/jscodeshift -t react-codemod/transforms/class.js node_modules/react-primitives --extensions js",
+    "build": "yarn codemod && yarn build:lib",
+    "build:lib": "NODE_ENV=production ./node_modules/.bin/babel src --out-dir lib",
+    "test:watch": "./node_modules/.bin/jest --watch",
+    "prepublish": "yarn test && yarn build"
   },
   "files": [
-    "index.js",
-    "lib",
-    "web",
-    "native"
+    "lib"
   ],
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-jest": "^20.0.3",
-    "babel-preset-babili": "^0.1.4",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react-app": "^3.0.1",
     "enzyme": "^2.9.1",
     "enzyme-to-json": "^1.5.1",
+    "flow-bin": "^0.51.1",
+    "flow-typed": "^2.1.5",
     "jest": "^20.0.4",
     "jest-glamor-react": "^3.0.0",
     "jest-react-native": "^18.0.0",
+    "jscodeshift": "^0.3.32",
     "jsdom": "^11.1.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -51,6 +63,9 @@
     },
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
+    ],
+    "testPathIgnorePatterns": [
+      "/react-codemod/"
     ]
   }
 }
