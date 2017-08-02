@@ -85,5 +85,5 @@ export default class App extends React.Component {
 
 ### Todo
 
-- [ ] Native constructor
+- [ ] Native constructor (which will also reduce the bundle size)
 - [ ] Docs
