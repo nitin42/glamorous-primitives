@@ -1,6 +1,6 @@
 # glamorous-primitives 💄
 
-> style primitive interfaces in React with glamorous
+> style primitive React interfaces with glamorous
 
 ## Table of content
 * [Problem](#problem)
@@ -9,7 +9,7 @@
 * [Examples](#examples)
 * [Demo](#demo)
 * [Documentation](#documentation)
-* [More](#more)
+* [More](#whats-more-)
 * [Caveats](#caveats)
 * [Resources](#resources)
 
@@ -53,8 +53,8 @@ There are no breaking changes in `glamorous-primitives` except [one thing](#cave
 ## What's more ?
 I am Working on 👇🏼
 
--[] className as prop using babel transform 
--[] css prop (like glamorous)
+- [ ] className as prop using babel transform 
+- [ ] css prop (like glamorous)
 
 ## Caveats
 `glamorous-primitives` does not export the "tiny" version of glamorous like glamorous and glamorous-native. 
