@@ -25,6 +25,7 @@
     "build": "yarn codemod && yarn build:lib",
     "build:lib": "NODE_ENV=production ./node_modules/.bin/babel src --out-dir lib",
     "test:watch": "./node_modules/.bin/jest --watch",
+    "test": "yarn jest",
     "prepublish": "yarn build"
   },
   "files": [
