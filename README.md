@@ -1,89 +1,69 @@
-## Glamorous primitives 💄 
-️️⚠  **WIP**
+# glamorous-primitives 💄
 
-> style primitive interfaces with glamorous
+> style primitive interfaces in React with glamorous
 
-### Problem 
+## Table of content
+* [Problem](#problem)
+* [Solution](#solution)
+* [Install](#install)
+* [Examples](#examples)
+* [Demo](#demo)
+* [Documentation](#documentation)
+* [More](#more)
+* [Caveats](#caveats)
+* [Resources](#resources)
 
+## Problem
 You cannot use [glamorous](https://github.com/paypal/glamorous) together with [react-primitives](https://github.com/lelandrichardson/react-primitives) to style the components.
 
-### Solution
+## Solution
+Combine glamorous with react-primitives by removing implicit dependencies to render the same code across the targets.
 
-Combine glamorous with react-primitives to render the same code across the targets.
+> Use this package **only** when you want to share the same code across multiple platform. If you're looking for styling the components on a specific platform use [glamorous-native](https://github.com/robinpowered/glamorous-native) for React Native and [glamorous](https://github.com/paypal/glamorous) for React
 
-> Use this package **only** when you want to share the same code across multiple platform.
-
-### Install
-
-This module is distributed via [npm](npmjs.com) and should be installed as one of your project's dependencies:
+## Install
 
 ```
-npm install --save glamorous-primitives@1.0.0
+npm install glamorous-primitives --save
 ```
 
-This also depends on `react` and `react-primitives`.
+This also depends on `react` and `react-primitives`. Make sure you have installed them.
 
-### Caveats 
+## Examples
 
-Right now glamorous doesn't have a native constructor (**WIP**) that can be used to style the components and render both on web and mobile, so there is subtle difference in import (with release [`1.0.0`](https://github.com/nitin42/glamorous-primitives/releases/tag/1.0.0))
+You can find all the examples [here](./examples).
 
-**For web**
+## Demo
 
-```
-import glamorous from 'glamorous-primitives/web'
-```
-
-**For mobile**
-
-```
-import glamorous from 'glamorous-primitives'
-```
-
-
-### Example 
-
-```jsx
-import React from 'react'
-import { StyleSheet } from 'react-primitives'
-import glamorous from 'glamorous-primitives'
-
-const StyledView = glamorous.view({
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  marginTop: '80px'
-})
-
-const StyledText = glamorous.text({
-  color: 'red',
-  backgroundColor: 'mistyrose',
-  fontSize: '40px'
-})
-
-export default class App extends React.Component {
-  render () {
-    return (
-      <StyledView>
-        <StyledText>Hello World!!</StyledText>
-      </StyledView>
-    )
-  }
-}
-
-```
-
-**This is the exact same code rendering in the browser and as a mobile app 😎**
-
+**Code**
 <p align="center">
-<img src="./Primitives.png" />
+  <img src="https://i.gyazo.com/8ccdfa06be2546370ab40e8851bcc518.png" />
 </p>
 
-**Also to Sketch (since I'm experimenting and the native constructor is WIP, so you won't be able to render to Sketch yet)**
+**Renders on Sketch, Web and Mobile**
 <p align="center">
-<img src="https://i.gyazo.com/902c9d20818cd7bac37fac5efcf1d202.gif" />
+  <img src="http://g.recordit.co/459MOJ19X4.gif" />
 </p>
 
-### Todo
 
-- [ ] Native constructor
-- [ ] Docs
+## Documentation
+
+There are no breaking changes in `glamorous-primitives` except [one thing](#caveats) which means you can do everything you used to do with `glamorous` and `glamorous-native` 😄
+
+## What's more ?
+I am Working on 👇🏼
+
+-[] className as prop using babel transform 
+-[] css prop (like glamorous)
+
+## Caveats
+`glamorous-primitives` does not export the "tiny" version of glamorous like glamorous and glamorous-native. 
+
+## Resources
+Below is the list of resources where you can learn more about primitive interfaces, rendering process across multiple platform and styling the components
+* [react-primitives](https://github.com/lelandrichardson/react-primitives)
+* [react-native-web](https://github.com/necolas/react-native-web)
+* [react-sketchapp](https://github.com/airbnb/react-sketchapp)
+
+## License 
+MIT
