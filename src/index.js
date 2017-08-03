@@ -10,5 +10,5 @@ export default assignAliases(glamorous)
 
 export {
   withTheme,
-  ThemeProvider
+  ThemeProvider,
 }
