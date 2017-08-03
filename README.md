@@ -1,4 +1,5 @@
 # glamorous-primitives 💄
+[![Build Status](https://travis-ci.org/nitin42/glamorous-primitives.svg?branch=master)](https://travis-ci.org/nitin42/glamorous-primitives)
 
 > style primitive React interfaces with glamorous
 
