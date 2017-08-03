@@ -4,4 +4,4 @@ node_js:
 notifications:
   email: false
 script:
-  - npm run jest
+  - npm run test
