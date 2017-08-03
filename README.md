@@ -49,7 +49,7 @@ You can find all the examples [here](./examples).
 
 ## Documentation
 
-There are no breaking changes in `glamorous-primitives` except [one thing](#caveats) which means you can do everything you used to do with `glamorous` and `glamorous-native` 😄
+There are no breaking changes in `glamorous-primitives` except for [one thing](#caveats) which means you can do everything you used to do with `glamorous` and `glamorous-native` 😄
 
 ## What's more ?
 I am Working on 👇🏼
