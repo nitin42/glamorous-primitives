@@ -6,13 +6,6 @@ import getStyles from '../utils/get-styles';
 import prepareStyles from './prepare-styles';
 import { freeze } from '../injector/platform';
 
-/**
- * Call the primitive interfaces from react primitives
- */
-function renderElement(comp, styleWrapper) {
-	return typeof comp === 'string' ? reactPrimitives[comp] : styleWrapper.comp;
-}
-
 export default function createGlamorous(splitProps) {
 	return function glamorous(comp, { propsAreCssOverrides, rootEl, displayName, forwardProps = [] } = {}) {
 		return glamorousComponentFactory;
@@ -25,7 +18,7 @@ export default function createGlamorous(splitProps) {
 				state = { theme: null };
 				setTheme = theme => this.setState({ theme });
 
-				// Not in sync with glamorous beta V4
+				// Not in sync with glamorous beta V4 (theme is already available on props)
 				constructor(props, context) {
 					super(props, context);
 					// (yet to be unbinded)
@@ -81,8 +74,7 @@ export default function createGlamorous(splitProps) {
 
 					const fullStyles = getStyles(GlamorousComponent.styles, props, styleOverrides, theme, this.context);
 
-					// Platform based
-					return React.createElement(renderElement(comp, GlamorousComponent), {
+					return React.createElement(GlamorousComponent.comp, {
 						...toForward,
 						ref: this.onRef,
 						style: fullStyles.length > 0 ? fullStyles : null,
@@ -103,8 +95,7 @@ export default function createGlamorous(splitProps) {
 
 			let userDefinedContextTypes = null;
 
-			// configure the contextTypes to be settable by the user,
-			// however also retaining the glamorous channel.
+			// Also retain the glamorous contexy channel
 			Object.defineProperty(GlamorousComponent, 'contextTypes', {
 				enumerable: true,
 				configurable: true,
@@ -112,8 +103,6 @@ export default function createGlamorous(splitProps) {
 					userDefinedContextTypes = value;
 				},
 				get() {
-					// if the user has provided a contextTypes definition,
-					// merge the default context types with the provided ones.
 					if (userDefinedContextTypes) {
 						return {
 							...defaultContextTypes,
@@ -140,7 +129,7 @@ export default function createGlamorous(splitProps) {
 					forwardProps,
 					displayName,
 				}),
-				{ withComponent }
+				{ withComponent, isGlamorousComponent: true }
 			);
 
 			return GlamorousComponent;
