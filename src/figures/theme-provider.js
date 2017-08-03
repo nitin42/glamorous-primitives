@@ -17,33 +17,24 @@ export default class ThemeProvider extends React.Component {
 		children: PropTypes.node,
 	};
 
-	broadcast = brcast(this.props.theme);
-
-	getTheme(passedTheme) {
-		const theme = passedTheme || this.props.theme;
-		return { ...this.outerTheme, ...theme };
-	}
-
 	getChildContext() {
 		return {
 			[CHANNEL]: this.broadcast,
 		};
 	}
 
-	setOuterTheme = theme => {
-		this.outerTheme = theme;
-	};
-
-	componentDidMount() {
-		if (this.context[CHANNEL]) {
-			this.unsubscribe = this.context[CHANNEL].subscribe(this.setOuterTheme);
-		}
-	}
+	broadcast = brcast(this.props.theme);
 
 	componentWillMount() {
 		if (this.context[CHANNEL]) {
 			this.setOuterTheme(this.context[CHANNEL].getState());
 			this.broadcast.setState(this.getTheme());
+		}
+	}
+
+	componentDidMount() {
+		if (this.context[CHANNEL]) {
+			this.unsubscribe = this.context[CHANNEL].subscribe(this.setOuterTheme);
 		}
 	}
 
@@ -55,6 +46,15 @@ export default class ThemeProvider extends React.Component {
 
 	componentWillUnmount() {
 		this.unsubscribe && this.unsubscribe();
+	}
+
+	getTheme(passedTheme) {
+		const theme = passedTheme || this.props.theme;
+		return { ...this.outerTheme, ...theme };
+	}
+
+	setOuterTheme = theme => {
+		this.outerTheme = theme;
 	}
 
 	render() {
