@@ -1,6 +1,6 @@
 {
   "name": "glamorous-primitives",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "main": "lib/index.js",
   "repository": "github.com/nitin42/glamorous-primitives",
   "author": "Nitin Tulswani",
@@ -17,9 +17,6 @@
     "react-primitives": "^0.4.3"
   },
   "peerDependencies": {
-    "glamor": "^2.20.37",
-    "glamorous": "^3.25.0",
-    "glamorous-native": "^1.1.0",
     "react": "^15.6.1"
   },
   "scripts": {
@@ -28,7 +25,7 @@
     "build": "yarn codemod && yarn build:lib",
     "build:lib": "NODE_ENV=production ./node_modules/.bin/babel src --out-dir lib",
     "test:watch": "./node_modules/.bin/jest --watch",
-    "prepublish": "yarn test && yarn build"
+    "prepublish": "yarn build"
   },
   "files": [
     "lib"
