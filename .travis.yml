@@ -4,4 +4,4 @@ node_js:
 notifications:
   email: false
 script:
-  - npm run ./node_modules/.bin/jest
+  - npm run jest
