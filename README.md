@@ -1,6 +1,10 @@
 # glamorous-primitives 💄
 [![Build Status](https://travis-ci.org/nitin42/glamorous-primitives.svg?branch=master)](https://travis-ci.org/nitin42/glamorous-primitives)
 
+<p align="center">
+  <img src="http://xpgraph.com/wp-content/uploads/2016/09/icon-web.svg" width="400" height="400"/>
+</p>
+
 > style primitive React interfaces with glamorous
 
 ## Table of content
