@@ -1,6 +1,6 @@
 import React from 'react';
 import 'react-primitives';
-import glamorous, { ThemeProvider, withTheme } from 'glamorous';
+import glamorous, { ThemeProvider, withTheme } from 'glamorous-primitives';
 
 // our main theme object
 const theme = {
