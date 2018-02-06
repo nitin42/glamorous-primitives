@@ -3,7 +3,7 @@
   "description": "style primitive React interfaces with glamorous",
   "version": "2.1.1",
   "main": "lib/index.js",
-  "repository": "github.com/nitin42/glamorous-primitives",
+  "repository": "nitin42/glamorous-primitives",
   "author": "Nitin Tulswani",
   "keywords": [
     "react",
