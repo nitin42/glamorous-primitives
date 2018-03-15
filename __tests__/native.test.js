@@ -10,7 +10,7 @@ expect.addSnapshotSerializer(serializer)
 
 describe('Primitive interfaces', () => {
   test('sanity test', () => {
-    const Component = glamorous.view({margin: '10px'})
+    const Component = glamorous.text({margin: '10px'})
 
     const tree = renderer.create(
       <Component>Hello World</Component>
