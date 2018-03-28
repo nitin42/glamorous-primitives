@@ -1,13 +1,9 @@
 # glamorous-primitives 💄
 [![Build Status](https://travis-ci.org/nitin42/glamorous-primitives.svg?branch=master)](https://travis-ci.org/nitin42/glamorous-primitives)
 
-<p align="center">
-  <img src="http://xpgraph.com/wp-content/uploads/2016/09/icon-web.svg" width="400" height="400"/>
-</p>
-
 > style primitive React interfaces with glamorous
 
-## Table of content
+## Table of contents
 * [Problem](#problem)
 * [Solution](#solution)
 * [Install](#install)
@@ -24,7 +20,7 @@ You cannot use [glamorous](https://github.com/paypal/glamorous) together with [r
 ## Solution
 Combine glamorous with react-primitives by removing implicit dependencies to render the same code across the targets.
 
-> Use this package **only** when you want to share the same code across multiple platform. If you're looking for styling the components on a specific platform use [glamorous-native](https://github.com/robinpowered/glamorous-native) for React Native and [glamorous](https://github.com/paypal/glamorous) for React
+> Use this package **only** when you want to share the same code across multiple platforms. If you're looking to style the components for a specific platform use [glamorous-native](https://github.com/robinpowered/glamorous-native) for React Native or [glamorous](https://github.com/paypal/glamorous) for React
 
 ## Install
 
@@ -32,7 +28,7 @@ Combine glamorous with react-primitives by removing implicit dependencies to ren
 npm install glamorous-primitives --save
 ```
 
-This also depends on `react` and `react-primitives`. Make sure you have installed them.
+This also depends on `react` and `react-primitives`. Make sure you have them installed.
 
 ## Examples
 
@@ -56,7 +52,7 @@ You can find all the examples [here](./examples).
 There are no breaking changes in `glamorous-primitives` except for [one thing](#caveats) which means you can do everything you used to do with `glamorous` and `glamorous-native` 😄
 
 ## What's more ?
-I am Working on 👇🏼
+I am working on 👇🏼
 
 - [ ] className as prop using babel transform 
 - [ ] css prop (like glamorous)
