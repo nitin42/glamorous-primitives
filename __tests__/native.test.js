@@ -126,4 +126,23 @@ describe('Primitive interfaces', () => {
 
     expect(tree).toMatchSnapshot()
   })
+
+  test('correctly sets the dom node for whitelisting React element props', () => {
+    const consoleError = jest.spyOn(global.console, 'error')
+    const Component = glamorous.text(
+      {
+        backgroundColor: 'red',
+      },
+      ({ myProp }) => ({
+        color: myProp ? 'black' : 'white',
+      }),
+    )
+    const wrapper = mount(<Component myProp={true} />)
+    // console.log("🍌", wrapper.find("div").prop('myProp'))
+    expect(wrapper.find("div").prop("style")).toMatchObject({ color: "black" })
+    expect(wrapper.find("div").prop("myProp")).toBeUndefined()
+    expect(consoleError).not.toHaveBeenCalled()
+    expect(consoleError).not.toHaveBeenCalledWith(expect.stringContaining("Warning: React does not recognize the `myProp` prop on a DOM element."))
+    expect(wrapper)
+  })
 })
