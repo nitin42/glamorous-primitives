@@ -10,7 +10,7 @@ expect.addSnapshotSerializer(serializer)
 
 describe('Primitive interfaces', () => {
   test('sanity test', () => {
-    const Component = glamorous.view({margin: '10px'})
+    const Component = glamorous.text({margin: '10px'})
 
     const tree = renderer.create(
       <Component>Hello World</Component>
@@ -63,7 +63,8 @@ describe('Primitive interfaces', () => {
     const wrapper = mount(<Component innerRef={ref} />)
     const View = wrapper.find('View').first()
 
-    expect(ref).toHaveBeenCalledWith(View.node)
+    // ReactWrapper:getNode() is no longer supported so use ReactWrapper:instance()
+    expect(ref).toHaveBeenCalledWith(View.instance())
   })
 
   test('should render a component with theme properties', () => {
