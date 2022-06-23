@@ -46,7 +46,7 @@
     "jest-glamor-react": "^3.0.0",
     "jest-react-native": "^18.0.0",
     "jscodeshift": "^0.3.32",
-    "jsdom": "^11.1.0",
+    "jsdom": "^16.5.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-test-renderer": "^16.2.0"
